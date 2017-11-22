@@ -2,47 +2,68 @@
   background: #6FC9FE;
   height: 420px;
 }
+.album{
+  margin-top:20px;
+}
+.album_list{
+  margin:auto 0;
+}
+.album_item {
+  width: 280px;
+  height: 280px;
+  background: #eee;
+  padding: 0;
+}
 
 .recommend_gallary {
   background: #F8F8F8;
 }
-.recommend_gallary .container{
-  margin:40px auto 50px;
+
+.recommend_gallary .container {
+  margin: 40px auto 50px;
 }
-.recommend_title{
-  
-}
-.recommend_title>*{
+
+.recommend_title {}
+
+.recommend_title>* {
   display: inline-block;
   vertical-align: middle;
 }
-.recommend_title>h2{
-  font-size:24px;
-  color:#000000;
-  margin-left:10px;
+
+.recommend_title>h2 {
+  font-size: 24px;
+  color: #000000;
+  margin-left: 10px;
 }
-.recommend_books{
-  margin-top:15px;
+
+.recommend_books {
+  margin-top: 15px;
 }
+
 .recommend_books_item {
-  background:#ffffff;
-  border:1px solid rgba(151,151,151,0.27);
-  width:233px;
-  height:373px;
+  background: #ffffff;
+  border: 1px solid rgba(151, 151, 151, 0.27);
+  width: 233px;
+  height: 373px;
   padding: 19px 37px 28px 38px;
+  float:left;
 }
-.book_img{
-  margin-bottom:17px;
+
+.book_img {
+  margin-bottom: 17px;
 }
-.book_name{
-  font-size:14px;
-  color:#000000;
+
+.book_name {
+  font-size: 14px;
+  color: #000000;
 }
-.book_author{
-  font-size:12px;
-  color:#555553;
+
+.book_author {
+  font-size: 12px;
+  color: #555553;
 }
-.book_price{
-  font-size:14px;
-  color:#f30000;
+
+.book_price {
+  font-size: 14px;
+  color: #f30000;
 }

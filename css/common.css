@@ -179,8 +179,7 @@ a:hover {
   -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.23);
           box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.23);
   width: 270px;
-  height: 0;
-  /* height: 766px; */
+  height: 766px;
   position: absolute;
   top: 0;
   left: 0;
