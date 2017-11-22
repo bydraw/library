@@ -42,7 +42,9 @@ a:hover {
 .booksmenu_open_item {
   cursor: pointer;
 }
-
+.nav_item.active{
+  color:#F30000;
+}
 .main {
   background: #F8F8F8;
   width: 100%;

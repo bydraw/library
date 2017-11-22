@@ -27,18 +27,24 @@
             <!-- nav -->
             <div class="nav">
               <ul>
-                <li class="nav_item active">
-                  <img class="nav_item_icon indexIcon" src="img/home.png">
-                  <span class="nav_item_text active">首页</span>
-                </li>
-                <li class="nav_item">
-                  <img class="nav_item_icon elibIcon" src="img/elib.png">
-                  <span class="nav_item_text">数字图书馆</span>
-                </li>
-                <li class="nav_item no-border-right">
-                  <img class="nav_item_icon klibIcon" src="img/klib.png">
-                  <span class="nav_item_text">知识库</span>
-                </li>
+                <a href="#">
+                  <li class="nav_item active">
+                    <img class="nav_item_icon indexIcon" src="img/home.png">
+                    <span class="nav_item_text">首页</span>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="nav_item">
+                    <img class="nav_item_icon elibIcon" src="img/elib.png">
+                    <span class="nav_item_text">数字图书馆</span>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="nav_item">
+                    <img class="nav_item_icon klibIcon" src="img/klib.png">
+                    <span class="nav_item_text">知识库</span>
+                  </li>
+                </a>
               </ul>
             </div>
           </div>
@@ -91,11 +97,9 @@
           </div>
           <!-- search -->
           <div class="col-md-9">
-            <div class="searcharea row">
-              <input type="text" class="booksearch_input col-xs-10" placeholder="请输入书名、作者名、ISBN等搜索">
-              <div class="booksearch_button col-xs-2">
-                <i></i>
-              </div>
+            <input type="text" class="booksearch_input" placeholder="请输入书名、作者名、ISBN等搜索">
+            <div class="booksearch_button">
+              <i></i>
             </div>
           </div>
         </div>
@@ -130,8 +134,12 @@
     <!-- recommend -->
     <!-- new books recommend -->
     <div class="recommend_gallery">
-      <div class="gallery_prev"></div>
-      <div class="gallery_next"></div>
+      <div class="gallery_prev newbooks">
+        <div class="prev_icon"></div>
+      </div>
+      <div class="gallery_next newbooks">
+        <div class="next_icon"></div>
+      </div>
       <div class="container newbooks">
 
         <div class="recommend_title">
@@ -140,7 +148,7 @@
         </div>
         <div class="recommend_books">
 
-          <div class="books_gallery">
+          <div class="books_gallery newbooks">
             <div class="recommend_books_item">
               <a href="#">
                 <img src="img/Bitmap@1x (1).png" alt="" class="book_img">
@@ -235,117 +243,121 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- readers recommend-->
+    <div class="recommend_gallery">
+      <div class="gallery_prev readerbooks">
+        <div class="prev_icon"></div>
       </div>
+      <div class="gallery_next readerbooks">
+        <div class="next_icon"></div>
+      </div>
+      <div class="container readerbooks">
 
-      <!-- readers recommend-->
-      <div class="recommend_gallery">
-          <div class="gallery_prev"></div>
-          <div class="gallery_next"></div>
-        <div class="container newbooks">
+        <div class="recommend_title">
+          <img src="img/recommend.png" alt="" class="title_icon">
+          <h2>读者推荐</h2>
+        </div>
+        <div class="recommend_books">
 
-          <div class="recommend_title">
-            <img src="img/new.png" alt="" class="title_icon">
-            <h2>新书推荐</h2>
-          </div>
-          <div class="recommend_books">
-
-            <div class="books_gallery">
-              <div class="recommend_books_item">
-                <a href="#">
+          <div class="books_gallery readerbooks">
+            <div class="recommend_books_item">
+              <a href="#">
                   <img src="img/Bitmap@1x (1).png" alt="" class="book_img">
                 </a>
-                <a href="#">
-                  <p class="book_name">一本书读懂公司管理</p>
-                </a>
-                <p class="book_author">作者：欧阳东 主编</p>
-                <p class="book_price">
-                  <span>¥ </span>
-                  <span class="book_price_meta">50.0</span>
-                </p>
-              </div>
-              <div class="recommend_books_item">
-                <a href="#">
+              <a href="#">
+                <p class="book_name">一本书读懂公司管理</p>
+              </a>
+              <p class="book_author">作者：欧阳东 主编</p>
+              <p class="book_price">
+                <span>¥ </span>
+                <span class="book_price_meta">50.0</span>
+              </p>
+            </div>
+            <div class="recommend_books_item">
+              <a href="#">
                   <img src="img/Bitmap@1x (2).png" alt="" class="book_img">
                 </a>
-                <a href="#">
-                  <p class="book_name">一本书读懂公司管理</p>
-                </a>
-                <p class="book_author">作者：欧阳东 主编</p>
-                <p class="book_price">
-                  <span>¥ </span>
-                  <span class="book_price_meta">50.0</span>
-                </p>
-              </div>
-              <div class="recommend_books_item">
-                <a href="#">
+              <a href="#">
+                <p class="book_name">一本书读懂公司管理</p>
+              </a>
+              <p class="book_author">作者：欧阳东 主编</p>
+              <p class="book_price">
+                <span>¥ </span>
+                <span class="book_price_meta">50.0</span>
+              </p>
+            </div>
+            <div class="recommend_books_item">
+              <a href="#">
                   <img src="img/Bitmap@1x (3).png" alt="" class="book_img">
                 </a>
-                <a href="#">
-                  <p class="book_name">一本书读懂公司管理</p>
-                </a>
-                <p class="book_author">作者：欧阳东 主编</p>
-                <p class="book_price">
-                  <span>¥ </span>
-                  <span class="book_price_meta">50.0</span>
-                </p>
-              </div>
-              <div class="recommend_books_item">
-                <a href="#">
+              <a href="#">
+                <p class="book_name">一本书读懂公司管理</p>
+              </a>
+              <p class="book_author">作者：欧阳东 主编</p>
+              <p class="book_price">
+                <span>¥ </span>
+                <span class="book_price_meta">50.0</span>
+              </p>
+            </div>
+            <div class="recommend_books_item">
+              <a href="#">
                   <img src="img/Bitmap@1x (4).png" alt="" class="book_img">
                 </a>
-                <a href="#">
-                  <p class="book_name">一本书读懂公司管理</p>
-                </a>
-                <p class="book_author">作者：欧阳东 主编</p>
-                <p class="book_price">
-                  <span>¥ </span>
-                  <span class="book_price_meta">50.0</span>
-                </p>
-              </div>
-              <div class="recommend_books_item">
-                <a href="#">
+              <a href="#">
+                <p class="book_name">一本书读懂公司管理</p>
+              </a>
+              <p class="book_author">作者：欧阳东 主编</p>
+              <p class="book_price">
+                <span>¥ </span>
+                <span class="book_price_meta">50.0</span>
+              </p>
+            </div>
+            <div class="recommend_books_item">
+              <a href="#">
                   <img src="img/Bitmap@1x (5).png" alt="" class="book_img">
                 </a>
-                <a href="#">
-                  <p class="book_name">一本书读懂公司管理</p>
-                </a>
-                <p class="book_author">作者：欧阳东 主编</p>
-                <p class="book_price">
-                  <span>¥ </span>
-                  <span class="book_price_meta">50.0</span>
-                </p>
-              </div>
-              <div class="recommend_books_item">
-                <a href="#">
+              <a href="#">
+                <p class="book_name">一本书读懂公司管理</p>
+              </a>
+              <p class="book_author">作者：欧阳东 主编</p>
+              <p class="book_price">
+                <span>¥ </span>
+                <span class="book_price_meta">50.0</span>
+              </p>
+            </div>
+            <div class="recommend_books_item">
+              <a href="#">
                   <img src="img/Bitmap@1x (1).png" alt="" class="book_img">
                 </a>
-                <a href="#">
-                  <p class="book_name">一本书读懂公司管理</p>
-                </a>
-                <p class="book_author">作者：欧阳东 主编</p>
-                <p class="book_price">
-                  <span>¥ </span>
-                  <span class="book_price_meta">50.0</span>
-                </p>
-              </div>
-              <div class="recommend_books_item">
-                <a href="#">
+              <a href="#">
+                <p class="book_name">一本书读懂公司管理</p>
+              </a>
+              <p class="book_author">作者：欧阳东 主编</p>
+              <p class="book_price">
+                <span>¥ </span>
+                <span class="book_price_meta">50.0</span>
+              </p>
+            </div>
+            <div class="recommend_books_item">
+              <a href="#">
                   <img src="img/Bitmap@1x (2).png" alt="" class="book_img">
                 </a>
-                <a href="#">
-                  <p class="book_name">一本书读懂公司管理</p>
-                </a>
-                <p class="book_author">作者：欧阳东 主编</p>
-                <p class="book_price">
-                  <span>¥ </span>
-                  <span class="book_price_meta">50.0</span>
-                </p>
-              </div>
+              <a href="#">
+                <p class="book_name">一本书读懂公司管理</p>
+              </a>
+              <p class="book_author">作者：欧阳东 主编</p>
+              <p class="book_price">
+                <span>¥ </span>
+                <span class="book_price_meta">50.0</span>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <!-- footer -->
   <div class="footer">

@@ -21,6 +21,7 @@
   background: #eee;
   padding: 0;
   margin-right: 13px;
+  float:left;
 }
 .album_item.item1{
   background: url('../img/album1.png');
@@ -32,7 +33,7 @@
   background: url('../img/album3.png');
 }
 .recommend_gallery{
-  width:1350px;
+  width:1340px;
   margin:0 auto;
   position: relative;
 }
@@ -96,7 +97,7 @@
   height: 373px;
   left:0;
 }
-.container.newbooks{
+.container.newbooks,.container.readerbooks{
   position: relative;
   overflow: hidden;
 }
@@ -108,9 +109,25 @@
   top:187px;
   cursor: pointer;
 }
+.gallery_prev:hover,.gallery_next:hover{
+  background:#999;
+}
 .gallery_prev{
   left:0px;
+}
+.prev_icon,.next_icon{
+  position: absolute;
+  left: 22px;
+  top:20px;
+  width: 20px;
+  height: 20px;
+}
+.prev_icon{
+  background: url('../img/arrow_left.png') no-repeat center center;
 }
 .gallery_next{
   right:0;
 }  
+.next_icon{
+  background: url('../img/arrow_right.png') no-repeat center center;
+}

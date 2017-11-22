@@ -1,0 +1,205 @@
+p{
+  margin:0;
+}
+.booksmenu_open{
+  height: 0;
+}
+.detail_leftside,.detail_rightside{
+  display: inline-block;
+  vertical-align: top;
+}
+.detail_rightside{
+  width: 276px;
+  margin-top: 18px;
+  margin-left:25px;
+}
+.books_top{
+  background:#ffffff;
+  box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
+  width:281px;
+  height:702px;
+}
+.container.detail{
+  margin-bottom:50px;
+}
+.pos{
+  margin-top:26px;
+  margin-bottom:17px;
+}
+.pos>p{
+  font-size:12px;
+  color:#555553;
+}
+.book_detail{
+  background:#ffffff;
+  -webkit-box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
+          box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
+  width:860px;
+  height:402px;
+  padding: 30px;
+}
+.book_detail>div{
+  display: inline-block;
+  vertical-align: top;
+}
+.book_detail_img{
+  width: 240px;
+  height: 340px;
+  margin-right: 30px;
+}
+.book_detail_text{
+  width: 520px;
+}
+.book_detail_text>p{
+  font-size:13px;
+  color:#555553;
+}
+.book_detail_text>h3{
+  font-size:18px;
+  color:#555553;
+  margin: 0;
+  margin-bottom:6px;
+}
+.book_detail_rank{
+  border-top:1px solid #dedede;
+  border-bottom:1px solid #dedede;
+  padding:8px 0;
+  margin:18px 0;
+}
+.rank_stars,.rank_ur{
+  margin-right:18px;
+}
+.book_detail_rank>*{
+  display: inline-block;
+}
+.book_detail_rank>p,{
+  font-size:12px;
+  color:#555553;
+}
+.rank_stars>img{
+  vertical-align: middle;
+}
+.book_detail_like{
+  float: right;
+  cursor: pointer;
+}
+.book_detail_like>img{
+  vertical-align: top;
+}
+.book_detail_more{
+  font-size:13px;
+  color:#555553;
+  line-height:26px;
+  text-align:left;
+}
+.book_detail_button{
+  border-radius:3px;
+  width:127px;
+  height:42px;
+  display: inline-block;
+  font-size:14px;
+  color:#f8f8f8;
+  text-align: center;
+  margin-top:26px;
+}
+.book_detail_button:hover{
+  color:#ffffff;
+}
+.tryicon{
+  background: #000;
+}
+.book_detail_button span{
+  display: inline-block;
+  line-height: 42px;
+  vertical-align: middle;
+}
+.book_detail_button.try{
+  background:#555553;
+  margin-right: 27px;
+}
+.book_detail_button.buy{
+  background:#f30000;
+}
+.tryicon,.buyicon{
+  width: 24px;
+  height: 24px;
+}
+.tryicon{background: url('../img/try.png') no-repeat center center}
+.buyicon{background: url('../img/cart.png') no-repeat center center}
+.book_intro{
+  margin-top:20px;
+  background:#ffffff;
+  box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
+  width:860px;
+  height:347px;
+  padding:30px;
+}
+.book_intro_tabs,.book_top_tabs{
+  height: 40px;
+}
+.intro_item,.top_item{
+  transition: color .2s;
+  cursor: pointer;
+  float:left;
+  padding-bottom:9px;
+  margin:9px 0;
+  width: 80px;
+  text-align: center;
+  border-right:1px solid #ededed;
+}
+.intro_item.active,.top_item.active{
+  color:#F30000;
+  border-bottom:2px solid #F30000;
+}
+.top_item{
+  padding: 0 0 9px 0;
+}
+.book_intro_content{
+  display: none;
+  margin-top: 20px;
+}
+.book_intro_text{
+  font-size:14px;
+  color:#555553;
+  line-height:28px;
+  text-align:justify;
+  text-indent: 2em;
+}
+.books_top{
+  padding:0 0 13px 12px;
+}
+.book_top_content{
+  display: none;
+}
+.books_top_item{
+  padding:12px 0;
+  border-bottom:1px solid #dedede;
+}
+.books_top_item>*{
+  display: inline-block;
+  vertical-align: top;
+}
+.top_item_img>img{
+  width: 80px;
+  height: 115px;
+}
+.top_item_detail{
+  margin-left:13px;
+}
+.top_item_name{
+  font-size:13px;
+  color:#000000;
+  margin-bottom:6px;
+}
+.top_item_author{
+  font-size:12px;
+  color:#555553;
+  margin-bottom:17px;
+}
+.top_item_price{
+  font-size:14px;
+  color:#f30000;
+}
+.books_top_item:last-child{
+  border-bottom:none;
+}

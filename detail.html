@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Index</title>
+  <title>Detail</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/detail.css">
+  <link rel="stylesheet" href="raty/jquery.raty.css">
 </head>
 
 <body>
@@ -27,18 +28,24 @@
             <!-- nav -->
             <div class="nav">
               <ul>
-                <li class="nav_item active">
-                  <img class="nav_item_icon indexIcon" src="img/home.png">
-                  <span class="nav_item_text">首页</span>
-                </li>
-                <li class="nav_item">
-                  <img class="nav_item_icon elibIcon" src="img/elib.png">
-                  <span class="nav_item_text">数字图书馆</span>
-                </li>
-                <li class="nav_item">
-                  <img class="nav_item_icon klibIcon" src="img/klib.png">
-                  <span class="nav_item_text">知识库</span>
-                </li>
+                <a href="index.html">
+                  <li class="nav_item">
+                    <img class="nav_item_icon indexIcon" src="img/home.png">
+                    <span class="nav_item_text">首页</span>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="nav_item">
+                    <img class="nav_item_icon elibIcon" src="img/elib.png">
+                    <span class="nav_item_text">数字图书馆</span>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="nav_item">
+                    <img class="nav_item_icon klibIcon" src="img/klib.png">
+                    <span class="nav_item_text">知识库</span>
+                  </li>
+                </a>
               </ul>
             </div>
           </div>
@@ -99,41 +106,197 @@
         </div>
       </div>
     </div>
-
+    <!-- detail -->
+    <div class="detail">
+      <div class="container detail">
+        <div class="detail_leftside">
+          <div class="pos">
+            <p>您的当前位置：首页 > 图书详情</p>
+          </div>
+          <div class="book_detail">
+            <div class="book_detail_img"><img src="img/detail_.png" alt=""></div>
+            <div class="book_detail_text">
+              <h3>文化规划：基于方化资源的城市整体发展策略</h3>
+              <p>
+                <span class="book_detail_author">作者：黄鹤</span>
+                <span class="book_detail_like"><img src="img/like.png">
+                  <span class="liked_text">收藏图书</span>
+                </span>
+              </p>
+              <div class="book_detail_rank">
+                <div class="rank_stars"></div>
+                <p><span class="rank_nums">36</span>人评分</p>
+                <p style="margin:0 10px">|</p>
+                <p class="rank_ur"></p>
+                <p>请你也来评分</p>
+              </div>
+              <div class="book_detail_more">
+                <p>出版社：中国建筑工业出版社</p>
+                <p>社书号：18961</p>
+                <p>ISBN：978-7-112-11714-7</p>
+                <p>版次：第一版</p>
+                <p>页码：184</p>
+                <p>出版日期：2010-04-01</p>
+              </div>
+              <div class="book_detail_oper">
+                <a href="#" class="book_detail_button try">
+                <span class="tryicon"></span>
+                <span>免费试读</span>
+              </a>
+                <a href="#" class="book_detail_button buy">
+                <span class="buyicon"></span>
+                <span>推荐购买</span>
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="book_intro">
+            <div class="book_intro_tabs">
+              <li class="intro_item active">图书简介</li>
+              <li class="intro_item">图书目录</li>
+              <li class="intro_item no-border-right">图书评论</li>
+            </div>
+            <div class="book_intro_panel">
+              <div class="book_intro_content" style="display:block">
+                <p class="book_intro_text">全球化进程推动了文化在城市发展中的核心作用，这引发了全球范围内基于文化的竞争，同时也促进了文化规划的举起与发展。文化规划作为针对文化资源的文化需求的规划方法，自20世纪70年代在西方城市兴起以来在有策略地运用城市文化资源促进城市整体发展方面走到了积极的作用。本书通过对中国城市文化发展方面，西方城市经过了从侧重经济发展的文化导下的城市更新，到关注社会经济整体发展的文化规划的历程，其发展理念的转变以及方法体系的建构对中国城市具有一定的参考价值。本书采用城市规划的视角，从发展目标、体系方法、空间实践和支撑体系方面对文化规划的理论及方法进行了建构和探讨，并以相关案例进行说明。在发展目标上，文化规划致力于社会目标、经济目标和美学目标的并重；在方法体系上，除与城市规划方法的一脉相承外，文化规划还有着自身的特色；在空间实践上，文化规划需要考虑文化资源和文化活动的合理空间布局；在支撑体系方面，管理体制、法律支撑、政策保障、资金来源以及技术支持等都是文化规划能够得以顺利实施的保障。</p>
+              </div>
+              <div class="book_intro_content">
+                目录
+              </div>
+              <div class="book_intro_content">
+                评论
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail_rightside">
+          <div class="book_top_tabs">
+            <li class="top_item active">好评书榜</li>
+            <li class="top_item no-border-right">推荐书榜</li>
+          </div>
+          <div class="books_top">
+            <div class="book_top_content" style="display:block">
+              <div class="books_top_item">
+                <a href="#" class="top_item_img"><img src="img/top_.png" alt=""></a>
+                <div class="top_item_detail">
+                  <p class="top_item_name">佛山祠庙建筑</p>
+                  <p class="top_item_author">作者：欧阳东 主编</p>
+                  <p class="top_item_price"><span>￥</span>50.0</p>
+                </div>
+              </div>
+              <div class="books_top_item">
+                <a href="#" class="top_item_img"><img src="img/top_.png" alt=""></a>
+                <div class="top_item_detail">
+                  <p class="top_item_name">佛山祠庙建筑</p>
+                  <p class="top_item_author">作者：欧阳东 主编</p>
+                  <p class="top_item_price"><span>￥</span>50.0</p>
+                </div>
+              </div>
+              <div class="books_top_item">
+                <a href="#" class="top_item_img"><img src="img/top_.png" alt=""></a>
+                <div class="top_item_detail">
+                  <p class="top_item_name">佛山祠庙建筑</p>
+                  <p class="top_item_author">作者：欧阳东 主编</p>
+                  <p class="top_item_price"><span>￥</span>50.0</p>
+                </div>
+              </div>
+              <div class="books_top_item">
+                <a href="#" class="top_item_img"><img src="img/top_.png" alt=""></a>
+                <div class="top_item_detail">
+                  <p class="top_item_name">佛山祠庙建筑</p>
+                  <p class="top_item_author">作者：欧阳东 主编</p>
+                  <p class="top_item_price"><span>￥</span>50.0</p>
+                </div>
+              </div>
+              <div class="books_top_item">
+                <a href="#" class="top_item_img"><img src="img/top_.png" alt=""></a>
+                <div class="top_item_detail">
+                  <p class="top_item_name">佛山祠庙建筑</p>
+                  <p class="top_item_author">作者：欧阳东 主编</p>
+                  <p class="top_item_price"><span>￥</span>50.0</p>
+                </div>
+              </div>
+            </div>
+            <div class="book_top_content">
+              <div class="books_top_item">
+                <a href="#" class="top_item_img"><img src="img/top2_.png" alt=""></a>
+                <div class="top_item_detail">
+                  <p class="top_item_name">为中国而设计</p>
+                  <p class="top_item_author">作者：欧阳东 主编</p>
+                  <p class="top_item_price"><span>￥</span>50.0</p>
+                </div>
+              </div>
+              <div class="books_top_item">
+                <a href="#" class="top_item_img"><img src="img/top2_.png" alt=""></a>
+                <div class="top_item_detail">
+                  <p class="top_item_name">为中国而设计</p>
+                  <p class="top_item_author">作者：欧阳东 主编</p>
+                  <p class="top_item_price"><span>￥</span>50.0</p>
+                </div>
+              </div>
+              <div class="books_top_item">
+                <a href="#" class="top_item_img"><img src="img/top2_.png" alt=""></a>
+                <div class="top_item_detail">
+                  <p class="top_item_name">为中国而设计</p>
+                  <p class="top_item_author">作者：欧阳东 主编</p>
+                  <p class="top_item_price"><span>￥</span>50.0</p>
+                </div>
+              </div>
+              <div class="books_top_item">
+                <a href="#" class="top_item_img"><img src="img/top2_.png" alt=""></a>
+                <div class="top_item_detail">
+                  <p class="top_item_name">为中国而设计</p>
+                  <p class="top_item_author">作者：欧阳东 主编</p>
+                  <p class="top_item_price"><span>￥</span>50.0</p>
+                </div>
+              </div>
+              <div class="books_top_item">
+                <a href="#" class="top_item_img"><img src="img/top2_.png" alt=""></a>
+                <div class="top_item_detail">
+                  <p class="top_item_name">为中国而设计</p>
+                  <p class="top_item_author">作者：欧阳东 主编</p>
+                  <p class="top_item_price"><span>￥</span>50.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- footer -->
     <div class="footer">
       <div class="container">
         <ul class="footer_links">
           <h5>友情链接：</h5>
           <li class="links_item">
-             | <a href="">住房和城乡建设部</a>
+            | <a href="">住房和城乡建设部</a>
           </li>
           <li class="links_item">
-             | <a href="">中国建筑工业出版社</a>
+            | <a href="">中国建筑工业出版社</a>
           </li>
           <li class="links_item">
-             | <a href="">中国建筑出版在线</a>
+            | <a href="">中国建筑出版在线</a>
           </li>
           <li class="links_item">
-             | <a href="">中国人事考试网</a>
+            | <a href="">中国人事考试网</a>
           </li>
           <li class="links_item">
-             | <a href="">中国建筑书店</a>
+            | <a href="">中国建筑书店</a>
           </li>
           <li class="links_item">
-             | <a href="">新浪地产网书城</a>
+            | <a href="">新浪地产网书城</a>
           </li>
           <li class="links_item">
-             | <a href="">科图建筑图书网</a>
+            | <a href="">科图建筑图书网</a>
           </li>
           <li class="links_item">
-             | <a href="">中国建筑图书网</a>
+            | <a href="">中国建筑图书网</a>
           </li>
           <li class="links_item">
-             | <a href="">重庆建兴图书</a>
+            | <a href="">重庆建兴图书</a>
           </li>
           <li class="links_item">
-             | <a href="">四川标准图书发行公司</a>
+            | <a href="">四川标准图书发行公司</a>
           </li>
         </ul>
         <div class="copyright">
@@ -147,6 +310,12 @@
   <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/tab.js"></script>
+  <script src="raty/jquery.raty.js"></script>
+  <script>
+    $('.rank_ur').raty();
+    $('.rank_stars').raty({ score: 5,readOnly: true });
+  </script>
 </body>
 
 </html>
