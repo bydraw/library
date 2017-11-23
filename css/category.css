@@ -92,26 +92,7 @@
 .cate_list_item:nth-child(odd){
   margin-right:17px;
 }
-.cate_pagination{
-  height: 30px;
-  float:right;
-  margin-bottom:50px;
-}
-.pag_item{
-  width: 40px;
-  font-size: 20px;
-  color:#555553;
-  float:left;
-  cursor: pointer;
-  border-right: 1px solid #555553;
-  text-align: center;
-}
-.pag_item:first-child{
-  border-left:1px solid #555553;
-}
-.pag_item.active{
-  color:#DD5F6E;
-}
+
 .cate_album{
   margin-top:735px;
 }

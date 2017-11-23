@@ -12,9 +12,18 @@ $(document).ready(function () {
     event.stopPropagation();
   })
   // menu into
-  $('.booksmenu_open_item').click(function(){
+  $('.booksmenu_open_item').click(function () {
+    $('.booksmenu_open_item').removeClass('active');
+    $(this).addClass('active');
     var cate = $(this).attr('class')[0];
-    window.open('category.html#' + cate,'_self');
-    window.location.reload();
+    window.location.href = "category.html#" + cate;
+    readCate();
+    // pos1:AJAX with cate here or at pos2
+    // render the cate books list
   })
+    // pag_num
+    $('.pag_item').on('click', function () {
+      $('.pag_item').removeClass('active');
+      $(this).addClass('active');
+    })
 })
