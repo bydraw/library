@@ -15,7 +15,8 @@ p{
 }
 .books_top{
   background:#ffffff;
-  box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
+  -webkit-box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
+          box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
   width:281px;
   height:702px;
 }
@@ -102,8 +103,8 @@ p{
   text-align: center;
   margin-top:26px;
 }
-.book_detail_button:hover{
-  color:#ffffff;
+.book_detail_button{
+  color:#ffffff!important;
 }
 .tryicon{
   background: #000;
@@ -129,7 +130,8 @@ p{
 .book_intro{
   margin-top:20px;
   background:#ffffff;
-  box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
+  -webkit-box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
+          box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
   width:860px;
   height:347px;
   padding:30px;
@@ -138,6 +140,7 @@ p{
   height: 40px;
 }
 .intro_item,.top_item{
+  -webkit-transition: color .2s;
   transition: color .2s;
   cursor: pointer;
   float:left;
@@ -202,4 +205,24 @@ p{
 }
 .books_top_item:last-child{
   border-bottom:none;
+}
+@media (max-width: 768px) {
+  .detail_rightside{
+    display: none;
+  }
+  .book_detail,.book_intro,.book_detail_text{
+    width: 100%;
+    height: auto;
+  }
+  .book_detail_img{
+    margin-bottom:30px;
+  }
+  .book_detail_button{
+  }
+  .book_detail_button.try{
+    float:left;
+  }
+  .book_detail_button.buy{
+    float:right;
+  }
 }
