@@ -69,3 +69,11 @@
   line-height:22px;
   text-shadow:0 1px 1px rgba(0,0,0,0.30);
 }
+@media screen and (min-width:768px) and (max-width: 1175px) {
+  .album_list{
+    width: 100%;
+  }
+  .recommend_books_item{
+    width: 20%;
+  }
+}

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // $('.recommend_books_item:eq(+'+($('.recommend_books_item').length-1) +')').addClass('no-margin-right');
   // menu toggle
   $('.booksmenu').click(function () {
     $('.booksmenu_open').animate({

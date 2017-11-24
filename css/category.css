@@ -88,6 +88,7 @@
   font-size:12px;
   color:#555553;
   line-height:20px;
+  text-align: justify;
 }
 .cate_list_item:nth-child(odd){
   margin-right:17px;
@@ -99,4 +100,41 @@
 .cate_album_img{
   width:270px;
   height:270px;
+}
+@media screen and (max-width: 1175px){
+  .cate_album_img{
+    width: 100%;
+    height: auto;
+  }
+  .cate_list_item{
+    margin:10px 0;
+    float:none;
+  }
+  .rightSide{
+    padding-left:30px;
+  }
+}
+@media screen and (max-width: 768px){
+  .cate_album{
+    margin-top:30px;
+  }
+  .cate_list_item{
+    width: 100%;
+  }
+  .cate_list{
+    margin-top:30px;
+    width: 100%;
+  }
+  .cate_item_img{
+    max-width: 40%;
+  }
+  .cate_item_detail{
+    max-width: 55%;
+  }
+  .item_detail_text{
+    width:auto;
+  }
+  .rightSide{
+    padding:0 10px;
+  }
 }
