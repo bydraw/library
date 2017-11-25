@@ -136,11 +136,13 @@ p{
   -webkit-box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
           box-shadow:0 3px 6px 0 rgba(95,95,95,0.10);
   width:860px;
-  height:347px;
   padding:30px;
 }
 .book_intro_tabs,.book_top_tabs{
   height: 40px;
+}
+.book_intro_tabs{
+  border-bottom:2px solid #dedede;
 }
 .intro_item,.top_item{
   -webkit-transition: color .2s;
@@ -209,6 +211,162 @@ p{
 .books_top_item:last-child{
   border-bottom:none;
 }
+.book_intro_catalog{
+  padding-left:40px;
+}
+.book_intro_cataitem{
+  font-size:14px;
+  color:#555553;
+  line-height:28px;
+}
+.comment_item{
+  padding:20px 0;
+  border-bottom:1px solid #dedede;
+}
+.comments_list{
+  margin-bottom:35px;
+}
+.book_comment{
+  padding-bottom:30px;
+}
+.book_comment_stars{
+  overflow: hidden;
+  padding-left:30px;
+}
+.book_comment_rate{
+  float:left;
+}
+.book_comment_rate{
+  text-align: center;
+}
+.stars_sample{
+  float:right;
+}
+.comment_rate{
+  font-family:Helvetica;
+  font-size:36px;
+  color:#f30000;
+}
+.book_comment_rate>p{
+  font-family:PingFangSC-Light;
+  font-size:12px;
+  color:#555553;
+}
+.comment_left{
+  float:left;
+}
+.rankbtn{
+  float:right;
+}
+.rankbtn>*{
+  display: inline-block;
+  vertical-align: middle;
+}
+#comment_text{
+  padding:12px;
+  margin:15px 0;
+  border:1px solid #ababab;
+  box-shadow:inset 0 0 4px 0 rgba(0,0,0,0.17);
+  width:100%;
+  height:88px;
+  resize: none;
+  font-family:PingFangSC-Regular;
+  font-size:12px;
+}
+.comment_left{
+  font-family:PingFangSC-Regular;
+  font-size:12px;
+  color:#555553;
+}
+.comment_left_num{
+  color:#F1AD11;
+  line-height: 30px;
+}
+.comment_submit{
+  cursor: pointer;
+  background:#ffae00;
+  border-radius:3px;
+  width:77px;
+  height:31px;
+  font-family:PingFangSC-Medium;
+  font-size:12px;
+  color:#ffffff;
+  text-align: center;
+  line-height: 30px;
+}
+.comment_item>*,.comment_btns>*{
+  display: inline-block;
+  vertical-align: top;
+  margin-right:15px;
+}
+.comment_btns>span{
+  cursor: pointer;
+}
+.comment_btns>span>*{
+  font-family:PingFangSC-Regular;
+  font-size:11px;
+  color:#ababab;
+  display: inline-block;
+  vertical-align: middle;
+}
+.comment_btns{
+  margin-bottom:10px;
+}
+.sub_comments{
+  padding-top:10px;
+  padding-bottom:15px;
+  border-bottom:1px solid #dedede;
+}
+.sub_comments>*{
+  display: inline-block;
+  vertical-align: top;
+}
+.sub_comments>img{
+  margin-right:10px;
+}
+.sub_comments:last-child{
+  border:none;
+}
+.comments_content,.sub_comments>div{
+  width:80%;
+}
+.comment_item>img{
+  max-width:15%;
+  margin-right:25px;
+}
+.newCom_title{
+  background:#f8f8f8;
+  height:30px;
+  line-height: 30px;
+  font-family:PingFangSC-Regular;
+  font-size:14px;
+  color:#555553;
+  margin-top:50px;
+  padding:0 10px;
+}
+.user_comment{
+  margin:5px 0 10px 0;
+}
+.toggle_comments{
+  height:0;
+  overflow: hidden;
+  padding:0 17px;
+  background:#f8f8f8;
+}
+.comment_time{
+  font-family:PingFangSC-Regular;
+  font-size:11px;
+  color:#ababab;
+  line-height:19px;
+}
+.sub_user_comment{
+  font-family:PingFangSC-Regular;
+  font-size:12px;
+  color:#555553;
+  line-height:19px;
+  margin:5px 0;
+}
+
 @media (max-width: 1175px) {
   .detail_leftside,.book_detail,.book_intro{
     width: 100%;
@@ -238,6 +396,20 @@ p{
     text-align: center;
   }
 }
+@media (max-width: 767px) {
+  .rankbtn{
+    text-align: right;
+    float:none;
+  }
+}
+@media (max-width: 395px) {
+  .comments_content, .sub_comments>div{
+    width: auto;
+  }
+  .comment_item>*{
+    margin-right:0;
+  }
+}
 @media (max-width: 476px) {
   .rank_stars,.rank_ur{
     margin-right: -15px;
@@ -254,5 +426,10 @@ p{
   }
   .book_detail_rank p{
     font-size: 1rem;
+  }
+}
+@media (max-width: 476px) {
+  .comment_item>img,.user_comment{
+    margin-right:0;
   }
 }

@@ -61,11 +61,13 @@
   vertical-align: top;
 }
 .cate_item_img{
+  cursor: pointer;
   width: 120px;
   height: 175px;
   margin-right: 15px;
 }
 .item_detail_name{
+  cursor: pointer;
   font-size:14px;
   color:#000000;
 }
@@ -125,9 +127,6 @@
     margin-top:30px;
     width: 100%;
   }
-  .cate_item_img{
-    max-width: 40%;
-  }
   .cate_item_detail{
     max-width: 55%;
   }
@@ -136,5 +135,17 @@
   }
   .rightSide{
     padding:0 10px;
+  }
+}
+@media (max-width: 376px){
+  .cate_list_item>a{
+    max-width:35%;
+  }
+  .cate_item_img{
+    width:100%;
+    height: auto;
+  }
+  .cate_item_detail{
+    max-width: 60%;
   }
 }

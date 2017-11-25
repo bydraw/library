@@ -22,9 +22,20 @@ $(document).ready(function () {
     // pos1:AJAX with cate here or at pos2
     // render the cate books list
   })
-    // pag_num
-    $('.pag_item').on('click', function () {
-      $('.pag_item').removeClass('active');
-      $(this).addClass('active');
-    })
+  // pag_num
+  $('.pag_item').on('click', function () {
+    $('.pag_item').removeClass('active');
+    $(this).addClass('active');
+  })
+})
+$('#comment_text').on('input', function (event) {
+  if ($('.comment_left_num').text() <= 0) {
+    if($('#comment_text').val().length>=200){
+      $('#comment_text').val($('#comment_text').val().substring(0, 199));
+      $('.comment_left_num').text(0)
+      event.preventDefault();
+      return;
+    }
+  }
+  $('.comment_left_num').text(200 - $('#comment_text').val().length);
 })

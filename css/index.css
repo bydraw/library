@@ -26,8 +26,11 @@
   margin-right: 2%;
   padding: 0;
 }
-
-.album_item>img {
+.album_item>a{
+  cursor: pointer;
+  width: 100%;
+}
+.album_item img {
   width: 100%;
 }
 
