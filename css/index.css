@@ -13,16 +13,17 @@
 
 .album_list {
   margin: auto 0;
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .album_item {
-  width: 32%;
+  display: inline-block;
+  width: 31%;
   margin-right: 2%;
   padding: 0;
 }
@@ -128,14 +129,16 @@
 }
 
 @media (max-width: 768px) {
+  .recommend_books{
+    position: relative;
+  }
   .container,
   .recommend_gallery,
-  .recommend_books,
-  .books_gallery {
+  .recommend_books {
     width: 100%;
   }
   .books_gallery {
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
   .recommend_title {
     text-align: center;
@@ -143,12 +146,11 @@
   .recommend_books_item {
     background: none;
     border: none;
-    width: 48%;
     padding: 0;
   }
-  .recommend_books_item:nth-child(odd) {
+  /* .recommend_books_item:nth-child(odd) {
     margin-right: 4%;
-  }
+  } */
   .recommend_title>* {
     display: block;
     text-align: center;
@@ -163,17 +165,6 @@
     width: 20%;
     height: 2px;
     background: #555553;
-  }
-  .recommend_books {
-    height: auto;
-  }
-  .recommend_books_item:nth-child(n+5){
-    display: none;
-    
-  }
-  .books_gallery {
-    width: 100%;
-    position: initial;
   }
   /* .recommend_gallery.readerbooks {
     display: none;
@@ -190,7 +181,7 @@
 @media (min-width:768px) and (max-width: 1175px) {
   .recommend_books_item{
     margin-right:4%;
-    width: 22%;
+    width: 18%;
   }
   .recommend_books_item:nth-child(4n){
     margin-right: 0;
@@ -204,7 +195,6 @@
     margin-bottom:20px;
   }
   .album_item,.recommend_books {
-    width: 100%;
     height: auto;
   }
   .recommend_books_item{
@@ -212,8 +202,11 @@
   }
 }
 @media screen and (max-width: 1175px) {
-  .recommend_gallery .container{
-    margin-top:60px;
+  .container.newbooks{
+    margin:0 auto;
+  }
+  .album{
+    margin-bottom:60px;
   }
   .recommend_books_item{
     padding-bottom:0px;

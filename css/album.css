@@ -23,6 +23,7 @@
   margin:0 auto;
   margin-top:274px;
   position: relative;
+  overflow: hidden;
 }
 .cate_pagination{
   width: 200px;
@@ -75,5 +76,28 @@
   }
   .recommend_books_item{
     width: 20%;
+  }
+}
+@media (max-width:768px){
+  .banner_album_title,.album_list,.banner_album_intro{
+    width:auto;
+  }
+  .album_list,.banner_album_intro{
+    height: auto;
+  }
+  .recommend_books_item{
+    width: 50%;
+  }
+  .banner_album_name{
+    font-size:2.4rem;
+  }
+  .banner_album_title{
+    padding:0 10px;
+  }
+  .banner_album_subtitle{
+    font-size: 2rem;
+  }
+  .album_list{
+    margin-top:350px;
   }
 }
